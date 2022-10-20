@@ -1,14 +1,18 @@
+import React from "react";
+import { ContainerCarro, ListaCarro, Ul } from "./Styled";
+
 export function Carro(props) {
-    return (
-      <div>
+  return (
+    <ContainerCarro>
+      <ListaCarro>
         <h2>Meu carro</h2>
-        <ul>
+        <Ul>
           <li>Cor: {props.cor}</li>
           <li>Ano: {props.ano}</li>
           <li>Flex: {props.flex ? "true" : "false"}</li>
           <li>Adicionado: {props.adicionadoPor}</li>
-        </ul>
-      </div>
-    );
-  }
-  
+        </Ul>
+      </ListaCarro>
+    </ContainerCarro>
+  );
+}
